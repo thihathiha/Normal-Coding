@@ -1,295 +1,403 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body{
-    /* height: 1000px; */
-    background-color: #000;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
+body {
+  /* height: 1000px; */
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
-nav{
-    width: 100%;
-    height: 50px;
-    color: grey;
-    /* background-color: #000; */
-    /* box-shadow: 0px 1px 5px 5px #b4b4b450; */
-    text-transform: uppercase;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    z-index: 10;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav h1 a{
-    color: grey;
-    font-size: 1.8rem;
-    cursor: pointer;
+nav {
+  width: 100%;
+  height: 50px;
+  color: grey;
+  /* background-color: #000; */
+  /* box-shadow: 0px 1px 5px 5px #b4b4b450; */
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
 }
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
+nav h1 a {
+  color: grey;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
-nav ul li a{
-    color: grey;
-    font-size: 0.8rem;
-    letter-spacing: 1.5px;
-    cursor: pointer;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
 }
 
-#home{
-    width: 100%;
-    height: 590px;
-    text-transform: uppercase;
-   
-    display: flex;
-}
-#home .left{
-    width: 5%;
-    height: 100%;
-    color: grey;
-}
-#home .left div{
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-#home .left div a{
-    color: grey;
-    cursor: pointer;
-}
-#home .maintxt{
-    width: 90%;
-    height: 100%;
-    /* background-color: red; */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#home .maintxt span{
-    font-size: 4.3rem;
-    margin-right: 20px;
-    letter-spacing: 1px;
-    font-weight: bold;
+nav ul li a {
+  color: grey;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }
 
-#home .maintxt span:nth-of-type(1){
-    border-bottom: 8px solid #fff;
+#home {
+  width: 100%;
+  height: 590px;
+  text-transform: uppercase;
 
-    position: relative;
+  display: flex;
 }
-#home .maintxt span:nth-of-type(1)::before{
-    content: 'Web Development';
-    font-size: 0.8rem;
-    color: grey;
-
-    position: absolute;
-    left: 0;
-    top: -5px;
+#home .left {
+  width: 5%;
+  height: 100%;
+  color: grey;
 }
+#home .left div {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
 
-#home .maintxt span:nth-of-type(2){
-    border-top: 8px solid #fff;
-
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-#home .maintxt span:nth-of-type(2)::before{
-    content: 'Coding School';
-    font-size: 0.8rem;
-    color: grey;
-
-    position: absolute;
-    right: 0;
-    bottom: -5px;
+#home .left div a {
+  color: grey;
+  cursor: pointer;
 }
+#home .maintxt {
+  width: 90%;
+  /* height: 100%; */
+  /* background-color: red; */
 
-#home .right{
-    width: 5%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#home .right div{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-#home .right div span{
-    color: grey;
-    font-size: 0.9rem;
-    text-align: center;
+#home .maintxt span {
+  font-size: 4.3rem;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
-#course{
-    width: 100%;
-    height: 590px;
-    /* background-color: pink; */
-    /* background-image: url("img/bg.jpg"); */
+#home .maintxt span:nth-of-type(1) {
+  border-bottom: 8px solid #fff;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: relative;
 }
+#home .maintxt span:nth-of-type(1)::before {
+  content: "Web Development";
+  font-size: 0.8rem;
+  color: grey;
 
-#course .coursecontainer{
-    width: 70%;
-    height: 350px;
-    color: grey;
-    /* background-color: red; */
-
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    gap: 40px;
-}
-#course .coursecontainer p{
-    font-size: 0.8rem;
-    margin-top: 10px;
-    letter-spacing: 1px;
-}
-#course .coursecontainer div{
-    width: 28%;
-    height: 78%;
-    color: #fff;
-    padding: 13px;
-    /* background-color: skyblue; */
-
-    box-shadow: 0px 0px 8px 5px #bababa50;
-    position: relative;
-}
-#course .coursecontainer div span{
-    font-size: 0.5rem;
-    color: grey;
-}
-#course .coursecontainer div h3{
-    color: #fff;
-    font-size: 2.8rem;
-    font-weight: normal;
-    margin: 10px 0 25px 0;
-}
-#course .coursecontainer div p{
-    font-size: 0.6rem;
-    line-height: 18px;
-}
-#course .coursecontainer div i{
-    color: #c5c5c5;
-    font-size: 0.8rem;
-    width: 22px;
-    height: 27px;
-    text-align: center;
-    line-height: 27px;
-    border-radius: 50%;
-    border: 1px solid grey;
-
-    position: absolute;
-    right: 10%;
-    top: 10%;
+  position: absolute;
+  left: 0;
+  top: -5px;
 }
 
-#course h2{
-    color: #c5c5c5;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+#home .maintxt span:nth-of-type(2) {
+  border-top: 8px solid #fff;
+
+  position: relative;
+}
+#home .maintxt span:nth-of-type(2)::before {
+  content: "Coding School";
+  font-size: 0.8rem;
+  color: grey;
+
+  position: absolute;
+  right: 0;
+  bottom: -5px;
 }
 
-#course p{
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    color: grey;
+#home .right {
+  width: 5%;
+  height: 100%;
 }
-#course a{
-    text-transform: uppercase;
-    padding: 8px 30px;
-    box-shadow: 0px 5px 10px #bababa30;
-    border: 1px solid grey;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+#home .right div {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#home .right div span {
+  color: grey;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-#contact{
-    width: 100%;
-    height: 590px;
+#course {
+  width: 100%;
+  height: 590px;
+  /* background-color: pink; */
+  /* background-image: url("img/bg.jpg"); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#course .coursecontainer {
+  width: 70%;
+  height: 350px;
+  color: grey;
+  /* background-color: red; */
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 40px;
+}
+#course .coursecontainer p {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+#course .coursecontainer .react {
+  height: 85%;
+}
+#course .coursecontainer div {
+  width: 28%;
+  height: 78%;
+  color: #fff;
+  padding: 13px;
+  /* background-color: skyblue; */
+
+  box-shadow: 0px 0px 8px 5px #bababa50;
+  position: relative;
+}
+#course .coursecontainer div span {
+  font-size: 0.5rem;
+  color: grey;
+}
+#course .coursecontainer div h3 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin: 10px 0 25px 0;
+}
+#course .coursecontainer div p {
+  font-size: 0.6rem;
+  line-height: 18px;
+}
+#course .coursecontainer div i {
+  color: #c5c5c5;
+  font-size: 0.8rem;
+  width: 22px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  border-radius: 50%;
+  border: 1px solid grey;
+
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+#course h2 {
+  color: #c5c5c5;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#course p {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: grey;
+}
+#course a {
+  text-transform: uppercase;
+  padding: 8px 30px;
+  box-shadow: 0px 5px 10px #bababa30;
+  border: 1px solid grey;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+#contact {
+  width: 100%;
+  height: 590px;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contactabout {
+  /* background-color: red; */
+  width: 35%;
+}
+
+#contact .contactabout .contactlogo span:nth-of-type(1) {
+  border-bottom: 3px solid #fff;
+}
+
+#contact .contactabout .contactlogo span:nth-of-type(2) {
+  border-top: 3px solid #fff;
+  margin-right: 25px;
+}
+
+#contact .contactabout .contactlogo p {
+  font-size: 0.8rem;
+  color: grey;
+  margin-top: 30px;
+  letter-spacing: 0.8px;
+  line-height: 1.2rem;
+}
+
+#contact .contactinfo {
+  width: 30%;
+  height: 200px;
+  /* background-color: red; */
+  margin-left: 20px;
+  border-left: 1px solid grey;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact .contactinfo h4 {
+  margin-bottom: 6px;
+  color: #c5c5c5;
+  font-size: 1.1rem;
+}
+
+#contact .contactinfo p {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  nav{
+    background: linear-gradient(#ffffff34,#ffffff27);
+    backdrop-filter: blur(7px);
+  }
+  nav h1 {
     font-size: 1.2rem;
+  }
+  nav ul li {
+    font-size: 0.9rem;
+  }
+  #home {
+    /* background-color: green; */
+    height: 400px;
+    margin-top: 50px;
+  }
+  #home .left,
+  .right {
+    display: none;
+  }
+  #home .maintxt{
+    width: 100%;
+    /* background: red; */
+  }
+  #home .maintxt span {
+    font-size: 2rem;
+  }
+  #home .maintxt span:nth-of-type(1) {
+    border-bottom: 5px solid #fff;
+  }
+  #home .maintxt span:nth-of-type(2) {
+    border-top: 5px solid #fff;
+  }
+  #home .maintxt span:nth-of-type(1)::before,
+  #home .maintxt span:nth-of-type(2)::before {
+    font-size: 0.3rem;
+  }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact .contactabout{
-    /* background-color: red; */
-    width: 35%;
-}
-
-#contact .contactabout .contactlogo span:nth-of-type(1){
-    border-bottom: 3px solid #fff;
-}
-
-#contact .contactabout .contactlogo span:nth-of-type(2){
-    border-top: 3px solid #fff;
-    margin-right: 25px;
-}
-
-#contact .contactabout .contactlogo p{
-    font-size: 0.8rem;
-    color: grey;
-    margin-top: 30px;
-    letter-spacing: 0.8px;
-    line-height: 1.2rem;
-}
-
-#contact .contactinfo{
-    width: 30%;
-    height: 200px;
-    /* background-color: red; */
-    margin-left: 20px;
-    border-left: 1px solid grey;
-
-    display: flex;
-    justify-content: center;
+  #course {
+    height: 1000px;
+    /* background-color: skyblue; */
+  }
+  #course h2 {
+    font-size: 1.2rem;
+  }
+  #course .coursecontainer {
+    width: 100%;
+    height: 700px;
     align-items: center;
     flex-direction: column;
+  }
+  #course .coursecontainer div,
+  #course .coursecontainer .react {
+    width: 80%;
+    height: 200px;
+  }
+  #course .coursecontainer div span {
+  font-size: 0.4rem;
+}
+#course .coursecontainer div h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 10px 0 25px 0;
+}
+#course .coursecontainer div p {
+  font-size: 0.5rem;
+  line-height: 1rem;
 }
 
-#contact .contactinfo h4{
-    margin-bottom: 6px;
-    color: #c5c5c5;
-    font-size: 1.1rem;
-}
+  #contact {
+    /* background-color: aliceblue; */
+    height: 500px;
+    flex-direction: column;
+  }
+  #contact .contactabout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+  }
+  #contact .contactabout .contactlogo{
+    width: 80%;
+    /* background-color: red; */
+  }
+  #contact .contactabout .contactlogo div{
+    text-align: center;
+  }
+  #contact .contactabout .contactlogo p{
+    text-align: justify;
+  }
+  #contact .contactabout .contactlogo span,strong{
+    font-size: 1rem;
+  }
+  #contact .contactinfo{
+    border: none;
+  }
 
-#contact .contactinfo p{
-    color: grey;
-    font-size: 0.8rem;
 }
