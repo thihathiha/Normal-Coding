@@ -299,7 +299,7 @@ nav ul li a {
   font-size: 1.1rem;
 }
 
-#contact .contactinfo p {
+#contact .contactinfo a {
   color: var(--text-color);
   font-size: 0.8rem;
 }
